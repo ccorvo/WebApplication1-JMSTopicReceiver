@@ -30,7 +30,7 @@ public class ReceiveAlertNotification implements MessageListener {
     @Override
     public void onMessage(Message message) {
         
-        TextMessage textMessage = (TextMessage)message;
+        TextMessage textMessage = (TextMessage)message;  //CAst message from base class to Type Text Message
         
         try{
            String messageContents = textMessage.getText();
